@@ -6,6 +6,9 @@ require_once( __DIR__ . '/inc/scripts.php');
 // fonts
 require_once( __DIR__ . '/inc/fonts.php');
 
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
 
 // enable navigation menu
 if( function_exists('register_nav_menus')) {

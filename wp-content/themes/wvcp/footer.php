@@ -1,3 +1,4 @@
+  </main>
 </div> <!-- /.container -->
 
     <!-- Footer -->
@@ -9,9 +10,9 @@
           <div class="col-md-6 my-6">
             <address class="m-0 text-white">
               <strong>WVCP – FM 88.5</strong>
-              <br>1480 Nashville Pike
-              <br>Gallatin, TN 37066
-              <br>(615) 452-8600
+              <br><a href="https://goo.gl/maps/fwyBAX54uir">1480 Nashville Pike
+              <br>Gallatin, TN 37066</a>
+              <br><a href="tel:615-452-8600">(615) 452-8600</a>
             </address>
           </div> <!-- /.col -->
           

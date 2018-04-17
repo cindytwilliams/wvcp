@@ -13,13 +13,9 @@ a {
   color: #9D2235;
 }
 
-/* SUPERFISH MENU */
-.sf-menu li {
-  background: #000 !important;
-}
-.sf-menu a {
-  color: #fff !important;
-  border: none;
+/* Navigation Menu */
+.navbar-nav {
+  text-transform: uppercase;
 }
 
 /* HEADER */
@@ -34,6 +30,10 @@ a {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+main {
+  padding-top: 35px;
 }
 
 
