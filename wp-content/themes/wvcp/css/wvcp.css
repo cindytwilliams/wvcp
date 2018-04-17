@@ -1,0 +1,51 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+    font-family: "Open Sans";
+  }
+}
+
+a {
+  color: #9D2235;
+}
+
+/* SUPERFISH MENU */
+.sf-menu li {
+  background: #000 !important;
+}
+.sf-menu a {
+  color: #fff !important;
+  border: none;
+}
+
+/* HEADER */
+.bg-dark {
+  background: url(../img/bk_header.png);
+}
+.wvcp-header {
+  height: 50vh;
+  min-height: 300px;
+  background: url('../img/station-photo.jpg') center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+/* BUTTONS */
+.btn-primary {
+  color: #fff;
+  background-color: #9D2235;
+  border-color: #9D2235;
+}
+
+
+/* CARDS */
+.card {
+  height: 100%;
+}

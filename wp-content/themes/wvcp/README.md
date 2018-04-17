@@ -1,0 +1,1 @@
+New WordPress theme for http://wvcp.net
