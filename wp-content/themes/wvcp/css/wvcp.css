@@ -2,18 +2,11 @@ body {
   padding-top: 54px;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-    font-family: "Open Sans";
-  }
-}
-
 a {
   color: #9D2235;
 }
 
-/* Navigation Menu */
+/* NAVIGATION */
 .navbar-nav {
   text-transform: uppercase;
 }
@@ -32,10 +25,31 @@ a {
   -o-background-size: cover;
 }
 
+/* BODY */
 main {
   padding-top: 35px;
 }
 
+/* SIDEBAR */
+aside {
+  border-left: 2px solid #9D2235;
+  padding-left: 25px;
+  border-right: none;
+  padding-right: none;
+}
+
+/* FOOTER */
+#menu-footer-links {
+  list-style-type: none;
+}
+footer a {
+  color: rgba(255,255,255,.5);
+  font-size: .9em;
+}
+footer a:hover, footer a:focus {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+}
 
 /* BUTTONS */
 .btn-primary {
@@ -45,7 +59,19 @@ main {
 }
 
 
-/* CARDS */
-.card {
-  height: 100%;
+/* RESPONSIVE */
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+    font-family: "Open Sans";
+  }
+}
+
+@media (max-width: 991px) {
+  aside {
+    border-left: none;
+    padding-left: none;
+    border-top: 2px solid #9D2235;
+    padding-top: 5px;
+  }
 }

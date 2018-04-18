@@ -25,13 +25,18 @@ add_image_size( 'portfolio-item-small', 300, 250, TRUE );
 // add sidebar widget
 if (function_exists('register_sidebar')) {
 	register_sidebar(
-    array (
-        'name'          => 'Sidebar Links',
-        'id'            => 'sidebar-1',
-        'before_widget' => '',
-        'after_widget'  => '',
-        'before_title' => '<h2 class="mt-4">',
-        'after_title'  => '</h2>'
-    )
+        array (
+            'name'          => 'Sidebar Links',
+            'id'            => 'sidebar-1',
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title' => '<h2 class="mt-4">',
+            'after_title'  => '</h2>'
+        )
 	);
+    register_nav_menus(
+        array(
+            'footer-menu' => __( 'Footer Links' )
+        )
+    );
 }
