@@ -22,7 +22,7 @@ add_image_size( 'single-post-thumbnail', 170, 170, TRUE );
 add_image_size( 'portfolio-item-small', 300, 250, TRUE );
 
 
-// add sidebar widget
+// add menus to sidebar and footer
 if (function_exists('register_sidebar')) {
 	register_sidebar(
         array (

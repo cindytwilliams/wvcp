@@ -27,9 +27,10 @@
         </div> <!-- /.row -->
         
         <div class="row">
-          <div class="col-md-12 my-12">
-            <p class="m-0 text-center text-white">Copyright &copy 2018 All Rights Reserved Volunteer State Community College.</p>
+          <div class="col-md-12 my-12 text-center">
+            <small class="text-muted text-white">Copyright &copy 2018 All Rights Reserved Volunteer State Community College.</small>
           </div>
+
         </div> <!-- /.row -->
 
       </div> <!-- /.container -->
