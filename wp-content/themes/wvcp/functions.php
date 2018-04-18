@@ -30,7 +30,7 @@ if (function_exists('register_sidebar')) {
             'id'            => 'sidebar-1',
             'before_widget' => '',
             'after_widget'  => '',
-            'before_title' => '<h2 class="mt-4">',
+            'before_title' => '<h2>',
             'after_title'  => '</h2>'
         )
 	);

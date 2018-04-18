@@ -6,6 +6,18 @@ a {
   color: #9D2235;
 }
 
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
 /* NAVIGATION */
 .navbar-nav {
   text-transform: uppercase;
@@ -32,10 +44,13 @@ main {
 
 /* SIDEBAR */
 aside {
-  border-left: 2px solid #9D2235;
+  border-left: 3px solid #9D2235;
   padding-left: 25px;
   border-right: none;
   padding-right: none;
+}
+aside > ul {
+  list-style-type: none;
 }
 
 /* FOOTER */
