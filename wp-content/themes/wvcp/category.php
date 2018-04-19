@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-sm-8">
           
-          <h1 class="mt-4"><?php single_cat_title( '', true ); ?></h1>
+          <h1><?php single_cat_title( '', true ); ?></h1>
  
 					<?php 
 					if ( have_posts() ) : 

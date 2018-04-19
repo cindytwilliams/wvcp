@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-sm-8">
           
-          <h2 class="mt-4"><?php the_title(); ?></h2>
+          <h2><?php the_title(); ?></h2>
           <?php the_content(); ?>
 
          </div>
