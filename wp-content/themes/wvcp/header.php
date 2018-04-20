@@ -18,13 +18,17 @@
 	  
     <!-- Facebook widget code -->
 	  <div id="fb-root"></div>
-		<script>(function(d, s, id) {
+		<script>
+  		//<![CDATA[
+  		(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
 		  js = d.createElement(s); js.id = id;
 		  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
 		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+		}(document, 'script', 'facebook-jssdk'));
+		//]]>
+		</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -33,18 +37,17 @@
       <div class="row w-100">
 
         <!-- logo -->
-        <div class="col-lg-4 nav-col1">
-         <a class="navbar-brand" href="/"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/wvcp-logo.png" alt="WVCP logo" width="100%"></a>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 nav-col1">
+         <a class="navbar-brand" href="/"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/wvcp-logo.png" alt="Home"></a>
         </div>
 
         <!-- navigation -->
-        <div class="col-lg-8 nav-col2">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-8 nav-col2">
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-label="toggle navigation" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!--<button type="button" class="btn btn-danger"><i class="fa fa-volume-up" aria-hidden="true"></i> Listen Now</button>-->
           <?php
           wp_nav_menu( array(
           'theme_location'    => 'main_nav',

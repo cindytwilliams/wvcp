@@ -19,22 +19,33 @@ p {
   margin-bottom: 2rem;
 }
 
-/* listen now button */
-.btn-danger {
-  color: white;
-  background-color: #9D2235;
-  border-color: #9D2235 
+.text-muted, .text-muted a {
+  color: #E8E8E8 !important;
+}
+.text-muted a:focus, .text-muted a:hover {
+  color: #DADADA !important;
 }
 
-/* NAVIGATION */
+
+/********** NAV BAR */
 .navbar-nav {
   text-transform: uppercase;
 }
 .nav-col2 {
   padding-top: 65px;
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.nav-link:focus, .nav-link:hover, .navbar-dark .navbar-nav .active>.nav-link {
+  color: #A9A9A9;
+}
+.navbar img {
+  width: 100%;
+}
 
-/* HEADER */
+
+/********** HEADER */
 .bg-dark {
   background: url(../img/bk_header.png);
 }
@@ -50,19 +61,19 @@ p {
 }
 p.public-stmt {
   font-size: .8em;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 p.public-stmt a {
   color: #6c757d;
   text-decoration: underline;
 }
 
-/* BODY */
+/********** BODY */
 main {
   padding-top: 35px;
 }
 
-/* SIDEBAR */
+/********** SIDEBAR */
 aside {
   background-color: #E8E8E8;
   padding: 20px;
@@ -76,36 +87,50 @@ aside h2 {
   font-size: 1.5rem;
 }
 
-/* FOOTER */
+/********** FOOTER */
 #menu-footer-links {
   list-style-type: none;
   margin-left: -40px;
 }
 footer a {
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.8);
   font-size: .9em;
 }
 footer a:hover, footer a:focus {
-  color: rgba(255,255,255,.75);
-  text-decoration: none;
+  color: rgba(255,255,255);
+  text-decoration: underline;
 }
 .social-icons > a {
   padding-right: 12px;
 }
 
-/* BUTTONS */
-.btn-primary {
+/********** BUTTONS */
+.btn-primary, .btn-danger {
   color: #fff;
   background-color: #9D2235;
   border-color: #9D2235;
 }
 
 
-/* RESPONSIVE */
+/********** RESPONSIVE */
 /* on desktop */
 @media (min-width: 992px) {
   body {
     padding-top: 54px;
+  }
+  
+  /* listen now button */
+  .listen-now {
+    background-color: #9D2235;
+    border-color: #9D2235;
+    border-radius: .25rem;
+  }
+  .listen-now:hover, .listen-now:focus {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  .listen-now a:hover {
+    color: white !important;
   }
 }
 
@@ -120,6 +145,15 @@ footer a:hover, footer a:focus {
   /* hide banner image */
   .wvcp-header {
     display: none;
+  }
+  .public-stmt {
+    display: none;
+  }
+  .navbar img {
+    width: 80%;
+  }
+  .nav-col2 {
+    padding-top: 10px;
   }
   body {
     padding-top: 200px;
